@@ -1,0 +1,394 @@
+ '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .container-pai{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+ 
+ 
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100vw;
+
+    }
+ 
+    .destaques{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 600px;
+        
+    }
+
+
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        text-align: center;
+        font-weight: 600;
+        margin: 30px;
+    }
+
+    .carousel-item{
+        border: 1px solid #bfbfbf; 
+        border-radius: 6px; 
+        height: 260px;
+        width: 300px;
+        
+    }
+
+    .destaque-link{
+        width: 100%;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+        margin-top: 20px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: .25rem;
+        border: 1px solid transparent;
+        font-weight: 400;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+ 
+
+</style>
+
+
+<body>
+    <div class="container-pai" id="destaques-home">
+        <div class="row">
+            <h2>
+                Ferramentas em destaque
+              </h2>
+        
+          <div id="destaques-carousel" class="destaques" style="gap: 16px; margin: 0 auto;">
+            <div class="carousel-item">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/colaboracao-de-equipes">
+                      colaboração de equipes
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/colaboracao-de-equipes/software/evernote"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684432366003.png" alt="Logo Empresa"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/colaboracao-de-equipes/software/evernote" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/landing-page">
+                      landing page
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/landing-page/software/instapage"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684160395893.png" alt="logo empresa"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/landing-page/software/instapage" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/recursos-humanos">
+                      recursos humanos
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/recursos-humanos/software/bambee"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684436073818.jpeg" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/recursos-humanos/software/bambee" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/erp">
+                      erp
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/erp/software/apparel-magic"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684516880964.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/erp/software/apparel-magic" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/omnichannel">
+                      omnichannel
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/omnichannel/software/survey-sparrow"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684517240881.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/omnichannel/software/survey-sparrow" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                            bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/recrutamento-e-selecao">
+                      recrutamento e seleção
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/recrutamento-e-selecao/software/vivahr"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684863668230.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/recrutamento-e-selecao/software/vivahr" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                            bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/recrutamento-e-selecao">
+                      recrutamento e seleção
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/recrutamento-e-selecao/software/breezy"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684861280298.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/recrutamento-e-selecao/software/breezy" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                            bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/crm">
+                      crm
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/crm/software/streak"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/5dc2f4b75f59db108a4cad99/1585804506504.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/crm/software/streak" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                            bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/gestao-de-projetos">
+                      gestão de projetos
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/gestao-de-projetos/software/monday"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/5d63eb482768e00e784ee627/1585804280362.jpeg" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/gestao-de-projetos/software/monday" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" mb30" style="border: 1px solid #bfbfbf; border-radius: 6px; height: 260px;">
+              <div class="item compare-box" style="display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      height: 100%;
+                      justify-content: space-around;">
+                <div class="compare-box-header">
+                  <h6 style="text-align: center; margin-top: 8px; text-transform: capitalize;">
+                    <a href="https://digitaliza.ai/envolvimento-do-cliente">
+                      envolvimento do cliente
+                    </a>
+                  </h6>
+                </div>
+                <div class="compare-box-body">
+                  <div class="text-center">
+                    <a href="https://digitaliza.ai/envolvimento-do-cliente/software/typeform"><img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1685384614603.png" alt="teste"></a>
+                  </div>
+                </div>
+                <div class="compare-box-footer mt25 mb25" style="text-align: center;">
+                  <a href="https://digitaliza.ai/envolvimento-do-cliente/software/typeform" class="btn_3 compare-btn lead-home-compare" style="position: relative;
+                      bottom: 0;">
+                    Saiba mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button id="prevButton">Anterior</button>
+              <button id="nextButton">Próximo</button>
+          </div>
+          </div>
+          <a class="destaque-link"   href="/destaques">Todos os produtos em destaque</a>
+        </div>
+    </div>
+    
+      <script>
+        // JavaScript para fazer o carrossel funcionar
+        const carousel = document.getElementById('destaques-carousel');
+        const items = carousel.querySelectorAll('.item');
+        const itemWidth = items[0].offsetWidth;
+        let currentPosition = 0;
+
+        // Configurar a largura do carrossel
+        carousel.style.width = `${items.length * itemWidth}px`;
+
+        // Função para mover o carrossel para a esquerda
+        function moveLeft() {
+            if (currentPosition > 0) {
+                currentPosition--;
+                carousel.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
+            }
+        }
+
+        // Função para mover o carrossel para a direita
+        function moveRight() {
+            if (currentPosition < items.length - 1) {
+                currentPosition++;
+                carousel.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
+            }
+        }
+
+        // Adicione eventos de clique para os botões de navegação
+        document.querySelector('.btn-prev').addEventListener('click', moveLeft);
+        document.querySelector('.btn-next').addEventListener('click', moveRight);
+
+    </script>
+
+
+</body>
+</html>

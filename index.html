@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Seu CSS existente aqui */
+
+        /* Adicione a classe "item" aos elementos dos itens do carrossel */
+        .item {
+            border: 1px solid #bfbfbf;
+            border-radius: 6px;
+            height: 260px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        /* Ajuste os estilos dos itens conforme necessário */
+        .item h6 {
+            text-align: center;
+            margin-top: 8px;
+            text-transform: capitalize;
+        }
+
+        /* Estilos para os botões de navegação */
+        .carousel-controls {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-controls button {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 5px 10px;
+            cursor: pointer;
+            outline: none;
+            border-radius: .25rem;
+        }
+
+        .carousel-controls button:hover {
+            background-color: #0056b3;
+        }
+
+        .destaques{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-pai" id="destaques-home">
+        <div class="row">
+            <h2>Ferramentas em destaque</h2>
+            <div id="destaques-carousel" class="destaques" style="gap: 16px; margin: 0 auto;">
+                <!-- Itens do carrossel -->
+                <div class="item">
+                    <div class="compare-box-header">
+                        <h6>
+                            <a href="https://digitaliza.ai/landing-page">landing page</a>
+                        </h6>
+                    </div>
+                    <div class="compare-box-body">
+                        <div class="text-center">
+                            <a href="https://digitaliza.ai/landing-page/software/instapage">
+                                <img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684160395893.png" alt="logo empresa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="compare-box-footer mt25 mb25">
+                        <a href="https://digitaliza.ai/landing-page/software/instapage" class="btn_3 compare-btn lead-home-compare">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="compare-box-header">
+                        <h6>
+                            <a href="https://digitaliza.ai/landing-page">landing page</a>
+                        </h6>
+                    </div>
+                    <div class="compare-box-body">
+                        <div class="text-center">
+                            <a href="https://digitaliza.ai/landing-page/software/instapage">
+                                <img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684160395893.png" alt="logo empresa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="compare-box-footer mt25 mb25">
+                        <a href="https://digitaliza.ai/landing-page/software/instapage" class="btn_3 compare-btn lead-home-compare">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare-box-header">
+                        <h6>
+                            <a href="https://digitaliza.ai/landing-page">landing page</a>
+                        </h6>
+                    </div>
+                    <div class="compare-box-body">
+                        <div class="text-center">
+                            <a href="https://digitaliza.ai/landing-page/software/instapage">
+                                <img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684160395893.png" alt="logo empresa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="compare-box-footer mt25 mb25">
+                        <a href="https://digitaliza.ai/landing-page/software/instapage" class="btn_3 compare-btn lead-home-compare">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="compare-box-header">
+                        <h6>
+                            <a href="https://digitaliza.ai/landing-page">landing page</a>
+                        </h6>
+                    </div>
+                    <div class="compare-box-body">
+                        <div class="text-center">
+                            <a href="https://digitaliza.ai/landing-page/software/instapage">
+                                <img style="max-width: 150px; display: inherit;" src="https://assets.kmaleon.com.br/uploads/undefined/1684160395893.png" alt="logo empresa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="compare-box-footer mt25 mb25">
+                        <a href="https://digitaliza.ai/landing-page/software/instapage" class="btn_3 compare-btn lead-home-compare">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prevButton" class="btn-prev">Anterior</button>
+                <button id="nextButton" class="btn-next">Próximo</button>
+            </div>
+            <a class="destaque-link" href="/destaques">Todos os produtos em destaque</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para fazer o carrossel funcionar
+        const carousel = document.getElementById('destaques-carousel');
+        const items = carousel.querySelectorAll('.item');
+        const itemWidth = items[0].offsetWidth;
+        let currentPosition = 0;
+
+        // Configurar a largura do carrossel
+        carousel.style.width = `${items.length * itemWidth}px`;
+
+        // Função para mover o carrossel para a esquerda
+        function moveLeft() {
+            if (currentPosition > 0) {
+                currentPosition--;
+                carousel.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
+            }
+        }
+
+        // Função para mover o carrossel para a direita
+        function moveRight() {
+            if (currentPosition < items.length - 1) {
+                currentPosition++;
+                carousel.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
+            }
+        }
+
+        // Adicione eventos de clique para os botões de navegação
+        document.querySelector('.btn-prev').addEventListener('click', moveLeft);
+        document.querySelector('.btn-next').addEventListener('click', moveRight);
+    </script>
+</body>
+</html>
